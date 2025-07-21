@@ -1,4 +1,4 @@
-import { Target, Megaphone, PenTool } from 'lucide-react';
+import { Target, Megaphone, PenTool, Users, Mail, Image, BarChart } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 const expertiseAreas = [
@@ -15,7 +15,22 @@ const expertiseAreas = [
   {
     icon: <PenTool className="w-8 h-8 text-primary" />,
     title: 'Content & SEO',
-    skills: ['SEO Strategy', 'Keyword Research', 'Content Marketing', 'On-Page & Off-Page SEO', 'Copywriting'],
+    skills: ['SEO Strategy', 'Content Creation', 'Copywriting', 'On-Page & Off-Page SEO', 'Keyword Research'],
+  },
+  {
+    icon: <Users className="w-8 h-8 text-primary" />,
+    title: 'Social Media Management',
+    skills: ['Community Engagement', 'Content Calendars', 'Platform Growth', 'Social Media Campaigns', 'Influencer Marketing'],
+  },
+  {
+    icon: <Mail className="w-8 h-8 text-primary" />,
+    title: 'Email Marketing',
+    skills: ['Campaign Automation', 'List Segmentation', 'A/B Testing', 'Performance Tracking', 'Lead Nurturing'],
+  },
+   {
+    icon: <BarChart className="w-8 h-8 text-primary" />,
+    title: 'Conversion Rate Optimization',
+    skills: ['A/B Testing', 'User Behavior Analysis', 'Landing Page Optimization', 'Funnel Analysis', 'Heatmap & Session Recording'],
   },
 ];
 
@@ -25,9 +40,9 @@ export default function ExpertiseSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm font-medium text-primary">Expertise</div>
-          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">My Skillset</h2>
+          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">My Skillset & Services</h2>
           <p className="max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            A comprehensive toolkit for driving growth through data-informed marketing.
+            A comprehensive toolkit for driving growth through data-informed marketing. I offer a range of services designed to help your business grow.
           </p>
         </div>
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
