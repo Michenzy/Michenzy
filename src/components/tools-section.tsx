@@ -4,8 +4,6 @@ import { Card, CardContent } from '@/components/ui/card';
 const tools = [
   { name: 'Google Analytics', logo: 'https://cdn.svgporn.com/logos/google-analytics.svg', dataAiHint: 'google analytics logo' },
   { name: 'Google Search Console', logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Google_Search_Console.svg', dataAiHint: 'google search console logo' },
-  { name: 'Google Ads', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Google_Ads_logo.svg/1024px-Google_Ads_logo.svg.png', dataAiHint: 'google ads logo' },
-  { name: 'Google Docs', logo: 'https://cdn.svgporn.com/logos/google-docs.svg', dataAiHint: 'google docs logo' },
   { name: 'Google Drive', logo: 'https://cdn.svgporn.com/logos/google-drive.svg', dataAiHint: 'google drive logo' },
   { name: 'Meta', logo: 'https://cdn.svgporn.com/logos/meta.svg', dataAiHint: 'meta logo' },
   { name: 'Facebook', logo: 'https://cdn.svgporn.com/logos/facebook.svg', dataAiHint: 'facebook logo' },
@@ -14,9 +12,6 @@ const tools = [
   { name: 'X', logo: 'https://cdn.svgporn.com/logos/x.svg', dataAiHint: 'x twitter logo' },
   { name: 'Buffer', logo: 'https://cdn.svgporn.com/logos/buffer.svg', dataAiHint: 'buffer logo' },
   { name: 'Mailchimp', logo: 'https://cdn.svgporn.com/logos/mailchimp-freddie.svg', dataAiHint: 'mailchimp logo' },
-  { name: 'Semrush', logo: 'https://cdn.svgporn.com/logos/semrush.svg', dataAiHint: 'semrush logo' },
-  { name: 'Canva', logo: 'https://cdn.svgporn.com/logos/canva.svg', dataAiHint: 'canva logo' },
-  { name: 'SimilarWeb', logo: 'https://cdn.svgporn.com/logos/similarweb.svg', dataAiHint: 'similarweb logo' },
 ];
 
 export default function ToolsSection() {
