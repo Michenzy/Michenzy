@@ -1,4 +1,13 @@
+"use client";
+
+import * as React from 'react';
 import Image from 'next/image';
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
 const brands = [
   { name: 'L5 Lab', logo: 'https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1428522818/ad5qrbc3mvme6sgcsi0h.png', dataAiHint: 'L5 Lab logo' },
@@ -10,23 +19,38 @@ const brands = [
 ];
 
 export default function HomeBrandsSection() {
+    const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
+
   return (
     <section id="home-brands" className="w-full py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto grid max-w-5xl grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-y-8 gap-x-12 items-center">
-          {brands.map((brand) => (
-            <div key={brand.name} className="flex items-center justify-center">
-                 <Image
-                  src={brand.logo}
-                  alt={`${brand.name} logo`}
-                  width={140}
-                  height={40}
-                  className="object-contain max-h-10 w-auto grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
-                  data-ai-hint={brand.dataAiHint}
-                />
-            </div>
-          ))}
-        </div>
+        <Carousel
+          plugins={[plugin.current]}
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent>
+            {brands.map((brand) => (
+              <CarouselItem key={brand.name} className="basis-1/3 md:basis-1/4 lg:basis-1/6">
+                <div className="flex items-center justify-center p-6 h-24">
+                  <Image
+                    src={brand.logo}
+                    alt={`${brand.name} logo`}
+                    width={140}
+                    height={40}
+                    className="object-contain max-h-10 w-auto grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+                    data-ai-hint={brand.dataAiHint}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </div>
     </section>
   );
