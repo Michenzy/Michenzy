@@ -39,7 +39,7 @@ export default function ExpertiseSection() {
     <section id="expertise" className="w-full py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm font-medium text-primary">Expertise</div>
+          <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium text-white">Expertise</div>
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">My Skillset & Services</h2>
           <p className="max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             A comprehensive toolkit for driving growth through data-informed marketing. I offer a range of services designed to help your business grow.

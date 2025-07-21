@@ -50,10 +50,10 @@ export default function CaseStudiesSection() {
   const currentStudy = caseStudiesData[activeStudy];
 
   return (
-    <section id="case-studies" className="w-full py-16 md:py-24 lg:py-32 bg-card">
+    <section id="case-studies" className="w-full py-16 md:py-24 lg:py-32 bg-muted">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm font-medium text-primary">Case Studies</div>
+          <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium text-white">Case Studies</div>
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Impact in Action</h2>
           <p className="max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Here's a look at how I've translated data into tangible results. Select a case study to see the performance metrics.

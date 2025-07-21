@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 const tools = [
   { name: 'Google Analytics', logo: 'https://cdn.svgporn.com/logos/google-analytics.svg', dataAiHint: 'google analytics logo' },
   { name: 'Google Search Console', logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Google_Search_Console.svg', dataAiHint: 'google search console logo' },
+  { name: 'Google Ads', logo: 'https://www.gstatic.com/images/branding/product/1x/ads_48dp.png', dataAiHint: 'google ads logo' },
   { name: 'Meta', logo: 'https://cdn.svgporn.com/logos/meta.svg', dataAiHint: 'meta logo' },
   { name: 'Facebook', logo: 'https://cdn.svgporn.com/logos/facebook.svg', dataAiHint: 'facebook logo' },
   { name: 'Instagram', logo: 'https://cdn.svgporn.com/logos/instagram-icon.svg', dataAiHint: 'instagram logo' },
@@ -11,7 +12,6 @@ const tools = [
   { name: 'X', logo: 'https://cdn.svgporn.com/logos/x.svg', dataAiHint: 'x twitter logo' },
   { name: 'Buffer', logo: 'https://cdn.svgporn.com/logos/buffer.svg', dataAiHint: 'buffer logo' },
   { name: 'Mailchimp', logo: 'https://cdn.svgporn.com/logos/mailchimp-freddie.svg', dataAiHint: 'mailchimp logo' },
-  { name: 'Google Ads', logo: 'https://www.gstatic.com/images/branding/product/1x/ads_48dp.png', dataAiHint: 'google ads logo' },
 ];
 
 export default function ToolsSection() {
@@ -19,7 +19,7 @@ export default function ToolsSection() {
     <section id="tools" className="w-full py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm font-medium text-primary">
+          <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium text-white">
             Tools
           </div>
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">
