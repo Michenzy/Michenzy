@@ -55,6 +55,22 @@ const testimonials = [
     quote: "We've worked with many marketers, but Micheal's dedication to data and clear communication sets him apart. Our user acquisition costs have dropped by 30% since he came on board.",
     rating: 5,
   },
+  {
+    name: 'Mark Robinson',
+    title: 'Founder, FitLife Apps',
+    image: 'https://placehold.co/100x100.png',
+    dataAiHint: 'man fitness',
+    quote: "The strategic insights from Micheal were invaluable. He helped us navigate the complexities of digital advertising with ease, resulting in a significant boost to our user base.",
+    rating: 5,
+  },
+  {
+    name: 'Laura Williams',
+    title: 'CMO, EcoGoods',
+    image: 'https://placehold.co/100x100.png',
+    dataAiHint: 'woman eco friendly',
+    quote: "Micheal's ability to turn complex data into a clear marketing narrative is exceptional. Our brand's online presence has grown stronger and more coherent.",
+    rating: 5,
+  },
 ];
 
 const Rating = ({ rating }: { rating: number }) => (
