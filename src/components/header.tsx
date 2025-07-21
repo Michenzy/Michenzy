@@ -11,6 +11,7 @@ const navLinks = [
   { href: "#case-studies", label: "Case Studies" },
   { href: "#expertise", label: "Expertise" },
   { href: "#testimonials", label: "Testimonials" },
+  { href: "#tools", label: "Tools" },
   { href: "#contact", label: "Contact" },
 ];
 
