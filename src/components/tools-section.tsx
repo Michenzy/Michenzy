@@ -6,8 +6,11 @@ const tools = [
   { name: 'Google Search Console', logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Google_Search_Console.svg', dataAiHint: 'google search console logo' },
   { name: 'Google Ads', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Google_Ads_logo.svg/1024px-Google_Ads_logo.svg.png', dataAiHint: 'google ads logo' },
   { name: 'Google Docs', logo: 'https://cdn.svgporn.com/logos/google-docs.svg', dataAiHint: 'google docs logo' },
+  { name: 'Google Drive', logo: 'https://cdn.svgporn.com/logos/google-drive.svg', dataAiHint: 'google drive logo' },
   { name: 'Meta', logo: 'https://cdn.svgporn.com/logos/meta.svg', dataAiHint: 'meta logo' },
-  { name: 'Facebook', logo: 'https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg', dataAiHint: 'facebook logo' },
+  { name: 'Facebook', logo: 'https://cdn.svgporn.com/logos/facebook.svg', dataAiHint: 'facebook logo' },
+  { name: 'Instagram', logo: 'https://cdn.svgporn.com/logos/instagram-icon.svg', dataAiHint: 'instagram logo' },
+  { name: 'LinkedIn', logo: 'https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca', dataAiHint: 'linkedin logo' },
   { name: 'X', logo: 'https://cdn.svgporn.com/logos/x.svg', dataAiHint: 'x twitter logo' },
   { name: 'Buffer', logo: 'https://cdn.svgporn.com/logos/buffer.svg', dataAiHint: 'buffer logo' },
   { name: 'Mailchimp', logo: 'https://cdn.svgporn.com/logos/mailchimp-freddie.svg', dataAiHint: 'mailchimp logo' },
@@ -31,7 +34,7 @@ export default function ToolsSection() {
             I leverage industry-leading tools to extract insights, automate campaigns, and deliver exceptional results.
           </p>
         </div>
-        <div className="mx-auto mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center">
+        <div className="mx-auto mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">
           {tools.map((tool) => (
             <Card key={tool.name} className="bg-card hover:border-primary/50 transition-colors flex items-center justify-center p-6 h-32">
               <CardContent className="p-0 flex items-center justify-center">
