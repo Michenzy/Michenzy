@@ -1,12 +1,7 @@
-import { BarChart3, Target, Megaphone, PenTool } from 'lucide-react';
+import { Target, Megaphone, PenTool } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 const expertiseAreas = [
-  {
-    icon: <BarChart3 className="w-8 h-8 text-primary" />,
-    title: 'Data Analysis & Visualization',
-    skills: ['SQL', 'Python (Pandas)', 'Tableau', 'Google Analytics', 'A/B Testing'],
-  },
   {
     icon: <Target className="w-8 h-8 text-primary" />,
     title: 'Marketing Strategy',
@@ -35,7 +30,7 @@ export default function ExpertiseSection() {
             A comprehensive toolkit for driving growth through data-informed marketing.
           </p>
         </div>
-        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {expertiseAreas.map((area) => (
             <Card key={area.title} className="bg-card hover:border-primary/50 transition-colors">
               <CardHeader className="items-center">
