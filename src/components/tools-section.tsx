@@ -8,10 +8,11 @@ const tools = [
   { name: 'Meta', logo: 'https://cdn.svgporn.com/logos/meta.svg', dataAiHint: 'meta logo' },
   { name: 'Facebook', logo: 'https://cdn.svgporn.com/logos/facebook.svg', dataAiHint: 'facebook logo' },
   { name: 'Instagram', logo: 'https://cdn.svgporn.com/logos/instagram-icon.svg', dataAiHint: 'instagram logo' },
-  { name: 'LinkedIn', logo: 'https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca', dataAiHint: 'linkedin logo' },
+  { name: 'LinkedIn', logo: 'https://cdn.svgporn.com/logos/linkedin-icon.svg', dataAiHint: 'linkedin logo' },
   { name: 'X', logo: 'https://cdn.svgporn.com/logos/x.svg', dataAiHint: 'x twitter logo' },
   { name: 'Buffer', logo: 'https://cdn.svgporn.com/logos/buffer.svg', dataAiHint: 'buffer logo' },
   { name: 'Mailchimp', logo: 'https://cdn.svgporn.com/logos/mailchimp-freddie.svg', dataAiHint: 'mailchimp logo' },
+  { name: 'Google Ads', logo: 'https://www.gstatic.com/images/branding/product/1x/ads_48dp.png', dataAiHint: 'google ads logo' },
 ];
 
 export default function ToolsSection() {
