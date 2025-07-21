@@ -14,47 +14,47 @@ body {
     --card-foreground: 24 9.8% 10%;
     --popover: 0 0% 100%;
     --popover-foreground: 24 9.8% 10%;
-    --primary: 26 83% 51%; /* Vibrant brown from proposal #A67B5B */
-    --primary-foreground: 0 0% 100%;
-    --secondary: 30 79% 65%; /* Deep gold for text from proposal #D4A27A */
-    --secondary-foreground: 26 83% 51%;
-    --muted: 30 5.9% 92.5%;
+    --primary: 30 45% 45%; /* A richer, deeper brown */
+    --primary-foreground: 40 33% 95%; /* Off-white for contrast */
+    --secondary: 35 60% 60%; /* A warm, inviting gold */
+    --secondary-foreground: 30 45% 15%; /* Darker brown for text on gold */
+    --muted: 30 20% 94%; /* A very light, warm gray for backgrounds */
     --muted-foreground: 24 5.4% 63.9%;
-    --accent: 30 76% 82%; /* Light gold for CTAs from proposal #E5CAA6 */
-    --accent-foreground: 24 9.8% 10%;
+    --accent: 35 70% 85%; /* A soft, light gold for highlights */
+    --accent-foreground: 30 45% 20%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
-    --border: 24 5.9% 90%;
-    --input: 24 5.9% 90%;
-    --ring: 24 9.8% 10%;
-    --chart-1: 26 83% 51%;
-    --chart-2: 30 79% 65%;
-    --chart-3: 30 76% 82%;
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 30 45% 45%;
+    --chart-1: 30 45% 45%;
+    --chart-2: 35 60% 60%;
+    --chart-3: 35 70% 85%;
     --chart-4: 24 9.8% 10%;
     --chart-5: 24 5.4% 63.9%;
     --radius: 0.5rem;
   }
  
   .dark {
-    --background: 24 9.8% 10%;
-    --foreground: 0 0% 98%;
-    --card: 24 9.8% 10%;
-    --card-foreground: 0 0% 98%;
-    --popover: 24 9.8% 10%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 26 83% 51%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 30 79% 65%;
-    --secondary-foreground: 26 83% 51%;
-    --muted: 24 3.7% 15.9%;
+    --background: 30 10% 12%;
+    --foreground: 40 33% 95%;
+    --card: 30 10% 12%;
+    --card-foreground: 40 33% 95%;
+    --popover: 30 10% 12%;
+    --popover-foreground: 40 33% 95%;
+    --primary: 35 60% 60%; /* Gold becomes primary in dark mode */
+    --primary-foreground: 30 45% 15%;
+    --secondary: 30 45% 45%; /* Brown becomes secondary */
+    --secondary-foreground: 40 33% 95%;
+    --muted: 30 10% 20%;
     --muted-foreground: 24 5.4% 63.9%;
-    --accent: 30 76% 82%;
-    --accent-foreground: 24 9.8% 10%;
+    --accent: 35 70% 85%;
+    --accent-foreground: 30 45% 20%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 24 3.7% 15.9%;
-    --input: 24 3.7% 15.9%;
-    --ring: 26 83% 51%;
+    --border: 30 10% 25%;
+    --input: 30 10% 25%;
+    --ring: 35 60% 60%;
   }
 }
 
