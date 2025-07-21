@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
 
 const brands = [
-  { name: 'Brand A', logo: 'https://placehold.co/120x40.png', dataAiHint: 'brand logo' },
+  { name: 'Genkit', logo: 'https://cdn.svgporn.com/logos/genkit.svg', dataAiHint: 'genkit logo' },
   { name: 'Brand B', logo: 'https://placehold.co/120x40.png', dataAiHint: 'brand logo' },
   { name: 'Brand C', logo: 'https://placehold.co/120x40.png', dataAiHint: 'brand logo' },
   { name: 'Brand D', logo: 'https://placehold.co/120x40.png', dataAiHint: 'brand logo' },
