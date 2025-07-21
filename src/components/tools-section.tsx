@@ -4,7 +4,6 @@ import { Card, CardContent } from '@/components/ui/card';
 const tools = [
   { name: 'Google Analytics', logo: 'https://cdn.svgporn.com/logos/google-analytics.svg', dataAiHint: 'google analytics logo' },
   { name: 'Google Search Console', logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Google_Search_Console.svg', dataAiHint: 'google search console logo' },
-  { name: 'Google Drive', logo: 'https://cdn.svgporn.com/logos/google-drive.svg', dataAiHint: 'google drive logo' },
   { name: 'Meta', logo: 'https://cdn.svgporn.com/logos/meta.svg', dataAiHint: 'meta logo' },
   { name: 'Facebook', logo: 'https://cdn.svgporn.com/logos/facebook.svg', dataAiHint: 'facebook logo' },
   { name: 'Instagram', logo: 'https://cdn.svgporn.com/logos/instagram-icon.svg', dataAiHint: 'instagram logo' },
