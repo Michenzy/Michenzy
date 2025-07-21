@@ -3,7 +3,6 @@
 import * as React from 'react';
 import Autoplay from "embla-carousel-autoplay";
 
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Star } from 'lucide-react';
 import {
@@ -16,58 +15,44 @@ import {
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    title: 'CEO, TechNova Inc.',
-    image: 'https://placehold.co/100x100.png',
-    dataAiHint: 'woman portrait',
+    name: 'Emmanuel',
+    title: 'ShipPack',
     quote: "Micheal's data-driven approach revolutionized our marketing. We saw a 200% increase in qualified leads within the first quarter. His insights are pure gold.",
     rating: 5,
   },
   {
-    name: 'David Chen',
-    title: 'Marketing Director, BrightSpark Co.',
-    image: 'https://placehold.co/100x100.png',
-    dataAiHint: 'man portrait',
+    name: 'Abin',
+    title: 'roPay',
     quote: "Working with Micheal was a game-changer. He didn't just give us data; he gave us a clear, actionable strategy that aligned perfectly with our business goals.",
     rating: 5,
   },
   {
-    name: 'Emily Rodriguez',
-    title: 'Founder, RetailBloom',
-    image: 'https://placehold.co/100x100.png',
-    dataAiHint: 'woman smiling',
+    name: 'Ayodeji',
+    title: 'SoleFitness Nigeria',
     quote: "The ROI on our ad spend has never been better. Micheal's analytical skills helped us cut waste and focus on channels that actually deliver results.",
     rating: 5,
   },
   {
-    name: 'Alex Thompson',
-    title: 'CTO, Innovate Solutions',
-    image: 'https://placehold.co/100x100.png',
-    dataAiHint: 'man developer',
+    name: 'Jerry',
+    title: 'Digital Ad Planet',
     quote: "Micheal has a rare talent for bridging the technical and marketing worlds. His campaign analysis is always spot-on, leading to significant performance improvements.",
     rating: 5,
   },
   {
-    name: 'Jessica Lee',
-    title: 'Head of Growth, ScaleUp Academy',
-    image: 'https://placehold.co/100x100.png',
-    dataAiHint: 'woman business',
+    name: 'Neriah',
+    title: 'Success Drives Global Consult',
     quote: "We've worked with many marketers, but Micheal's dedication to data and clear communication sets him apart. Our user acquisition costs have dropped by 30% since he came on board.",
     rating: 5,
   },
   {
-    name: 'Mark Robinson',
-    title: 'Founder, FitLife Apps',
-    image: 'https://placehold.co/100x100.png',
-    dataAiHint: 'man fitness',
+    name: 'Elite',
+    title: 'CoinNewsExtraTV',
     quote: "The strategic insights from Micheal were invaluable. He helped us navigate the complexities of digital advertising with ease, resulting in a significant boost to our user base.",
     rating: 5,
   },
   {
-    name: 'Laura Williams',
-    title: 'CMO, EcoGoods',
-    image: 'https://placehold.co/100x100.png',
-    dataAiHint: 'woman eco friendly',
+    name: 'Julius',
+    title: 'AforjarikHRPartners',
     quote: "Micheal's ability to turn complex data into a clear marketing narrative is exceptional. Our brand's online presence has grown stronger and more coherent.",
     rating: 5,
   },
@@ -128,10 +113,6 @@ export default function TestimonialsSection() {
                         </blockquote>
                       </CardContent>
                       <CardFooter className="flex items-center gap-4 mt-auto pt-4">
-                        <Avatar>
-                          <AvatarImage src={testimonial.image} alt={testimonial.name} data-ai-hint={testimonial.dataAiHint} />
-                          <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                        </Avatar>
                         <div>
                           <p className="font-bold">{testimonial.name}</p>
                           <p className="text-sm text-muted-foreground">{testimonial.title}</p>
