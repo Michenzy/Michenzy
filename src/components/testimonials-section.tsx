@@ -1,6 +1,15 @@
+"use client";
+
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Star } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const testimonials = [
   {
@@ -25,6 +34,22 @@ const testimonials = [
     image: 'https://placehold.co/100x100.png',
     dataAiHint: 'woman smiling',
     quote: "The ROI on our ad spend has never been better. Micheal's analytical skills helped us cut waste and focus on channels that actually deliver results.",
+    rating: 5,
+  },
+  {
+    name: 'Alex Thompson',
+    title: 'CTO, Innovate Solutions',
+    image: 'https://placehold.co/100x100.png',
+    dataAiHint: 'man developer',
+    quote: "Micheal has a rare talent for bridging the technical and marketing worlds. His campaign analysis is always spot-on, leading to significant performance improvements.",
+    rating: 5,
+  },
+  {
+    name: 'Jessica Lee',
+    title: 'Head of Growth, ScaleUp Academy',
+    image: 'https://placehold.co/100x100.png',
+    dataAiHint: 'woman business',
+    quote: "We've worked with many marketers, but Micheal's dedication to data and clear communication sets him apart. Our user acquisition costs have dropped by 30% since he came on board.",
     rating: 5,
   },
 ];
@@ -57,29 +82,45 @@ export default function TestimonialsSection() {
             Real feedback from business leaders who have seen real results.
           </p>
         </div>
-        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-          {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="bg-background flex flex-col">
-              <CardHeader>
-                <Rating rating={testimonial.rating} />
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <blockquote className="text-lg italic">
-                  "{testimonial.quote}"
-                </blockquote>
-              </CardContent>
-              <CardFooter className="flex items-center gap-4 mt-4">
-                <Avatar>
-                  <AvatarImage src={testimonial.image} alt={testimonial.name} data-ai-hint={testimonial.dataAiHint} />
-                  <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                </Avatar>
-                <div>
-                  <p className="font-bold">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                </div>
-              </CardFooter>
-            </Card>
-          ))}
+        <div className="relative mt-12">
+           <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-4xl mx-auto"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 h-full">
+                    <Card className="bg-background flex flex-col h-full">
+                      <CardHeader>
+                        <Rating rating={testimonial.rating} />
+                      </CardHeader>
+                      <CardContent className="flex-grow">
+                        <blockquote className="text-lg italic">
+                          "{testimonial.quote}"
+                        </blockquote>
+                      </CardContent>
+                      <CardFooter className="flex items-center gap-4 mt-auto pt-4">
+                        <Avatar>
+                          <AvatarImage src={testimonial.image} alt={testimonial.name} data-ai-hint={testimonial.dataAiHint} />
+                          <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                        </Avatar>
+                        <div>
+                          <p className="font-bold">{testimonial.name}</p>
+                          <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                        </div>
+                      </CardFooter>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2 fill-black" />
+            <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 fill-black" />
+          </Carousel>
         </div>
       </div>
     </section>
