@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
+import { useState } from 'react';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
 
 const images = [
   { src: '/assets/about/websites/sole-fitness-ng.jpg', alt: 'Sole Fitness NG Website', hint: 'Sole Fitness NG website screenshot', className: 'md:col-span-3' },
@@ -11,6 +13,14 @@ const images = [
 ];
 
 export default function WebsiteMarketingSection() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleImageClick = (src: string) => {
+    setSelectedImage(src);
+    setIsOpen(true);
+  };
+
   return (
     <section id="website-marketing" className="w-full py-16 md:py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
@@ -27,7 +37,8 @@ export default function WebsiteMarketingSection() {
         </div>
         <div className="mx-auto mt-12 grid grid-cols-2 md:grid-cols-3 auto-rows-fr gap-4 lg:gap-6">
           {images.map((image, index) => (
-             <Card key={index} className={`overflow-hidden cursor-pointer ${image.className}`}>
+            <div key={index} onClick={() => handleImageClick(image.src)} className={`cursor-pointer ${image.className}`}>
+               <Card className="overflow-hidden h-full">
                 <CardContent className="p-0 h-full">
                   <Image
                     src={image.src}
@@ -39,9 +50,23 @@ export default function WebsiteMarketingSection() {
                   />
                 </CardContent>
               </Card>
+            </div>
           ))}
         </div>
       </div>
+      {selectedImage && (
+        <Dialog open={isOpen} onOpenChange={setIsOpen}>
+          <DialogContent className="max-w-4xl p-0">
+            <Image
+              src={selectedImage}
+              alt="Enlarged view"
+              width={1200}
+              height={800}
+              className="object-contain w-full h-full rounded-lg"
+            />
+          </DialogContent>
+        </Dialog>
+      )}
     </section>
   );
 }
