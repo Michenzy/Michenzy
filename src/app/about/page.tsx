@@ -1,5 +1,9 @@
 import Header from '@/components/header';
 import AboutSection from '@/components/about-section';
+import PhilosophySection from '@/components/philosophy-section';
+import ResultsHighlightsSection from '@/components/results-highlights-section';
+import NextStepsSection from '@/components/next-steps-section';
+
 
 export default function AboutPage() {
   return (
@@ -7,6 +11,9 @@ export default function AboutPage() {
       <Header />
       <main>
         <AboutSection />
+        <PhilosophySection />
+        <ResultsHighlightsSection />
+        <NextStepsSection />
       </main>
     </div>
   );
