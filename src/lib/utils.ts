@@ -21,19 +21,43 @@ export const associatedBrands = [
 
 export const certificates = [
     {
-        title: "Google Ads Certification",
-        embedUrl: "https://drive.google.com/file/d/1aBcDeFgHiJkLmNoPqRsTuVwXyZ_12345/preview"
+        title: "Google Digital Marketing Certificate",
+        embedUrl: "https://drive.google.com/file/d/1QOhppZfb3q1_8apzkepI0TqU14QgOpsm/preview"
     },
     {
-        title: "HubSpot Content Marketing",
-        embedUrl: "https://drive.google.com/file/d/1bCdEfGhIjKlMnOpQrStUvWxYz_54321/preview"
+        title: "Facebook AD Mastery",
+        embedUrl: "https://drive.google.com/file/d/1PYqHMv9MM6Bancuk3vjRTZy30nUbqa3V/preview"
     },
     {
-        title: "Meta Certified Digital Marketing Associate",
-        embedUrl: "https://drive.google.com/file/d/1cDeFgHiJkLmNoPqRsTuVwXyZ_67890/preview"
+        title: "Strategic Marketing Plan",
+        embedUrl: "https://drive.google.com/file/d/1AR4QekiYb8h9LhiwGZ0vxmViSW1T9RQf/preview"
     },
     {
-        title: "Google Analytics Individual Qualification",
-        embedUrl: "https://drive.google.com/file/d/1dEfGhIjKlMnOpQrStUvWxYz_09876/preview"
+        title: "Product Management",
+        embedUrl: "https://drive.google.com/file/d/1rci85Y7YkKLkBw3fNrLmsBKRfA3_DJRV/preview"
+    },
+    {
+        title: "Professional Soft Skills",
+        embedUrl: "https://drive.google.com/file/d/1_K4aRYjZikKCPY0Rbp6hdOm6U43GrlTb/preview"
+    },
+    {
+        title: "Employability Skill Training",
+        embedUrl: "https://drive.google.com/file/d/1laTJGnfuj00iwR9YTJKOximR5eL8tigg/preview"
+    },
+    {
+        title: "AI Career Essentials",
+        embedUrl: "https://drive.google.com/file/d/1bQMr1xNKYJ2TkIAqPgWzrIwwc76onJpd/preview"
+    },
+    {
+        title: "Grant Writing",
+        embedUrl: "https://drive.google.com/file/d/15BRHEbrEZf5dVrw8BImlWO1kiVqL5Yky/preview"
+    },
+    {
+        title: "Blockchain",
+        embedUrl: "https://drive.google.com/file/d/1jIOpyDnI6RFuHeG0bTieV6Ay-mj3aD61/preview"
+    },
+    {
+        title: "Google Developer Certificate",
+        embedUrl: "https://drive.google.com/file/d/1G_77UaxNbo8JB1ttLEvGABDCXplHNhUG/preview"
     }
 ]
