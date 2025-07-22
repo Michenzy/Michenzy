@@ -1,6 +1,5 @@
 import Header from '@/components/header';
 import AboutSection from '@/components/about-section';
-import ContactSection from '@/components/contact-section';
 
 export default function AboutPage() {
   return (
@@ -8,7 +7,6 @@ export default function AboutPage() {
       <Header />
       <main>
         <AboutSection />
-        <ContactSection />
       </main>
     </div>
   );

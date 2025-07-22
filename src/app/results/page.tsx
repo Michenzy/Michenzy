@@ -1,7 +1,6 @@
 import Header from '@/components/header';
 import CaseStudiesSection from '@/components/case-studies-section';
 import BrandsSection from '@/components/brands-section';
-import ContactSection from '@/components/contact-section';
 
 export default function ResultsPage() {
   return (
@@ -10,7 +9,6 @@ export default function ResultsPage() {
       <main>
         <CaseStudiesSection />
         <BrandsSection />
-        <ContactSection />
       </main>
     </div>
   );
