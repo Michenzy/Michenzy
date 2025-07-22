@@ -1,5 +1,9 @@
+"use client";
+
+import { useState } from 'react';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
 const images = [
   { src: 'https://placehold.co/400x600.png', alt: 'Social media page example 1', hint: 'instagram profile' },
@@ -25,18 +29,31 @@ export default function SocialMediaPagesSection() {
         </div>
         <div className="mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {images.map((image, index) => (
-            <Card key={index} className="overflow-hidden">
-              <CardContent className="p-0">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={400}
-                  height={600}
-                  className="object-cover w-full h-auto"
-                  data-ai-hint={image.hint}
-                />
-              </CardContent>
-            </Card>
+             <Dialog key={index}>
+              <DialogTrigger asChild>
+                <Card className="overflow-hidden cursor-pointer">
+                  <CardContent className="p-0">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={400}
+                      height={600}
+                      className="object-cover w-full h-auto"
+                      data-ai-hint={image.hint}
+                    />
+                  </CardContent>
+                </Card>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl p-0">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={800}
+                    height={1200}
+                    className="object-contain w-full h-auto rounded-lg"
+                  />
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
       </div>
