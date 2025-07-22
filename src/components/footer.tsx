@@ -14,12 +14,12 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-4">
             <Button asChild variant="ghost" size="icon">
-              <a href="mailto:micheal.joseph@example.com" aria-label="Email">
+              <a href="mailto:hello@michealj.com" aria-label="Email">
                 <Mail className="h-5 w-5 text-muted-foreground" />
               </a>
             </Button>
             <Button asChild variant="ghost" size="icon">
-              <a href="https://www.linkedin.com/in/micheal-joseph-placeholder" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/kayodej245" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5 text-muted-foreground" />
               </a>
             </Button>

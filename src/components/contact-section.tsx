@@ -12,13 +12,13 @@ export default function ContactSection() {
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <Button asChild size="lg" variant="default">
-            <a href="mailto:micheal.joseph@example.com">
+            <a href="mailto:hello@michealj.com">
               <Mail className="mr-2 h-5 w-5" />
               Email Me
             </a>
           </Button>
           <Button asChild size="lg" variant="secondary">
-            <a href="https://www.linkedin.com/in/micheal-joseph-placeholder" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/kayodej245" target="_blank" rel="noopener noreferrer">
               <Linkedin className="mr-2 h-5 w-5" />
               Connect on LinkedIn
             </a>
