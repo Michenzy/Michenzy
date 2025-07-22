@@ -8,12 +8,12 @@ const siteUrl = 'https://michealj.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Micheal Joseph | Data-Driven Marketer & Analyst',
+    default: 'Micheal Joseph | Marketing Strategist',
     template: '%s | Micheal Joseph',
   },
   description: 'Micheal Joseph is a data-driven marketing professional specializing in turning analytics into actionable growth strategies. Explore my work and results.',
   openGraph: {
-    title: 'Micheal Joseph | Data-Driven Marketer & Analyst',
+    title: 'Micheal Joseph | Marketing Strategist',
     description: 'Data-driven marketing professional turning analytics into growth strategies.',
     url: siteUrl,
     siteName: 'Micheal Joseph Portfolio',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Micheal Joseph | Data-Driven Marketer & Analyst',
+    title: 'Micheal Joseph | Marketing Strategist',
     description: 'Data-driven marketing professional turning analytics into growth strategies.',
     images: [`${siteUrl}/assets/me/micheal-joseph-headshot.jpg`],
   },

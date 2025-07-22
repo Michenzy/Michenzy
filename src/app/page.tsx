@@ -7,7 +7,7 @@ import TestimonialsSection from '@/components/testimonials-section';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Micheal Joseph | Data-Driven Marketer & Analyst',
+  title: 'Micheal Joseph | Marketing Strategist',
   description: 'Micheal Joseph is a data-driven marketing professional specializing in turning analytics into actionable growth strategies. Explore my work and results.',
    alternates: {
     canonical: '/',

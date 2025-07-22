@@ -10,7 +10,7 @@ export default function HeroSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="space-y-4 text-left">
             <h1 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-primary">
-              Data-Driven Marketer &amp; Analyst
+              Marketing Strategist
             </h1>
             <p className="max-w-[600px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               I help businesses drive growth by turning data into actionable marketing strategies.
