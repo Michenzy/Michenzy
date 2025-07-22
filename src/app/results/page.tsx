@@ -1,6 +1,5 @@
 import Header from '@/components/header';
 import CaseStudiesSection from '@/components/case-studies-section';
-import TestimonialsSection from '@/components/testimonials-section';
 import BrandsSection from '@/components/brands-section';
 import ContactSection from '@/components/contact-section';
 
@@ -10,7 +9,6 @@ export default function ResultsPage() {
       <Header />
       <main>
         <CaseStudiesSection />
-        <TestimonialsSection />
         <BrandsSection />
         <ContactSection />
       </main>

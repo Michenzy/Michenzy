@@ -1,15 +1,5 @@
+import { associatedBrands } from '@/lib/utils';
 import Image from 'next/image';
-
-const brands = [
-  { name: 'Genkit', logo: 'https://cdn.svgporn.com/logos/genkit.svg', dataAiHint: 'genkit logo' },
-  { name: 'Brand B', logo: 'https://placehold.co/120x40.png', dataAiHint: 'brand logo' },
-  { name: 'Brand C', logo: 'https://placehold.co/120x40.png', dataAiHint: 'brand logo' },
-  { name: 'Brand D', logo: 'https://placehold.co/120x40.png', dataAiHint: 'brand logo' },
-  { name: 'Brand E', logo: 'https://placehold.co/120x40.png', dataAiHint: 'brand logo' },
-  { name: 'Brand F', logo: 'https://placehold.co/120x40.png', dataAiHint: 'brand logo' },
-  { name: 'Brand G', logo: 'https://placehold.co/120x40.png', dataAiHint: 'brand logo' },
-  { name: 'Brand H', logo: 'https://placehold.co/120x40.png', dataAiHint: 'brand logo' },
-];
 
 export default function BrandsSection() {
   return (
@@ -27,7 +17,7 @@ export default function BrandsSection() {
           </p>
         </div>
         <div className="mx-auto mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-8 items-center">
-          {brands.map((brand) => (
+          {associatedBrands.map((brand) => (
             <div key={brand.name} className="flex items-center justify-center p-6 h-32">
                  <Image
                   src={brand.logo}
