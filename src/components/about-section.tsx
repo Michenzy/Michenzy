@@ -4,8 +4,8 @@ export default function AboutSection() {
   return (
     <section id="about" className="w-full py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
-          <div className="flex justify-center">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
+          <div className="w-full lg:w-1/3 flex justify-center lg:justify-start">
             <Image
               src="/assets/me/micheal-joseph-headshot.jpg"
               alt="Micheal Joseph Portrait"
@@ -15,7 +15,7 @@ export default function AboutSection() {
               data-ai-hint="professional portrait"
             />
           </div>
-          <div className="space-y-6 text-left">
+          <div className="w-full lg:w-2/3 space-y-6 text-left">
             <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium text-white">My Story</div>
                 <h1 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-primary">
