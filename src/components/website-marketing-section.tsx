@@ -17,7 +17,7 @@ export default function WebsiteMarketingSection() {
             Showcase
           </div>
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">
-            Website Marketing
+            Apps & Website Marketing
           </h2>
           <p className="max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             A glimpse into websites I've helped build and grow, focusing on user experience and conversion.
