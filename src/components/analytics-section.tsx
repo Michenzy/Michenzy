@@ -93,13 +93,15 @@ export default function AnalyticsSection() {
           <DialogContent className="max-w-4xl p-0">
             <DialogTitle className="sr-only">Enlarged Image View</DialogTitle>
              <div className="relative">
-              <Image
-                src={selectedImage.src}
-                alt="Enlarged view"
-                width={1200}
-                height={800}
-                className="object-contain w-full h-full rounded-lg"
-              />
+              <div className="aspect-[3/2]">
+                <Image
+                  src={selectedImage.src}
+                  alt="Enlarged view"
+                  width={1200}
+                  height={800}
+                  className="object-contain w-full h-full rounded-lg"
+                />
+              </div>
                <Button
                 variant="ghost"
                 size="icon"
