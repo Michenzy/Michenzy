@@ -1,15 +1,15 @@
 "use client";
 
-import { useState } from 'react';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
 const images = [
-  { src: 'https://placehold.co/400x600.png', alt: 'Social media page example 1', hint: 'instagram profile' },
-  { src: 'https://placehold.co/400x600.png', alt: 'Social media page example 2', hint: 'facebook page' },
-  { src: 'https://placehold.co/400x600.png', alt: 'Social media page example 3', hint: 'linkedin profile' },
-  { src: 'https://placehold.co/400x600.png', alt: 'Social media page example 4', hint: 'twitter feed' },
+  { src: 'https://placehold.co/400x600.png', alt: 'Social media page example 1', hint: 'instagram profile', className: 'row-span-2' },
+  { src: 'https://placehold.co/400x300.png', alt: 'Social media page example 2', hint: 'facebook page', className: '' },
+  { src: 'https://placehold.co/400x300.png', alt: 'Social media page example 3', hint: 'linkedin profile', className: '' },
+  { src: 'https://placehold.co/400x600.png', alt: 'Social media page example 4', hint: 'twitter feed', className: 'row-span-2' },
+  { src: 'https://placehold.co/800x300.png', alt: 'Social media campaign', hint: 'social media campaign', className: 'col-span-2' },
+
 ];
 
 export default function SocialMediaPagesSection() {
@@ -27,33 +27,20 @@ export default function SocialMediaPagesSection() {
             Examples of social media presence I have cultivated, focusing on engagement and brand consistency.
           </p>
         </div>
-        <div className="mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mx-auto mt-12 grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 lg:gap-6">
           {images.map((image, index) => (
-             <Dialog key={index}>
-              <DialogTrigger asChild>
-                <Card className="overflow-hidden cursor-pointer">
-                  <CardContent className="p-0">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={400}
-                      height={600}
-                      className="object-cover w-full h-auto"
-                      data-ai-hint={image.hint}
-                    />
-                  </CardContent>
-                </Card>
-              </DialogTrigger>
-              <DialogContent className="max-w-2xl p-0">
+             <Card key={index} className={`overflow-hidden cursor-pointer ${image.className}`}>
+                <CardContent className="p-0 h-full">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     width={800}
-                    height={1200}
-                    className="object-contain w-full h-auto rounded-lg"
+                    height={600}
+                    className="object-cover w-full h-full"
+                    data-ai-hint={image.hint}
                   />
-              </DialogContent>
-            </Dialog>
+                </CardContent>
+              </Card>
           ))}
         </div>
       </div>
