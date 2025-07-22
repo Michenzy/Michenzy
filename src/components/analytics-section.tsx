@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { useState } from 'react';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 
 const images = [
   { src: '/assets/about/analytics/IMG-20250722-WA0010.jpg', alt: 'Analytics graph', hint: 'analytics chart' },
@@ -73,6 +73,7 @@ export default function AnalyticsSection() {
       {selectedImage && (
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
           <DialogContent className="max-w-4xl p-0">
+            <DialogTitle className="sr-only">Enlarged Image View</DialogTitle>
             <Image
               src={selectedImage}
               alt="Enlarged view"

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { useState } from 'react';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 
 const images = [
   { src: '/assets/about/websites/sole-fitness-ng.jpg', alt: 'Sole Fitness NG Website', hint: 'Sole Fitness NG website screenshot', className: 'md:col-span-3' },
@@ -37,7 +37,7 @@ export default function WebsiteMarketingSection() {
         </div>
         <div className="mx-auto mt-12 grid grid-cols-2 md:grid-cols-3 auto-rows-fr gap-4 lg:gap-6">
           {images.map((image, index) => (
-            <div key={index} onClick={() => handleImageClick(image.src)} className={`cursor-pointer ${image.className}`}>
+            <div key={index} onClick={() => handleImageClick(image.src)} className={`cursor-pointer ${image.className || ''}`}>
                <Card className="overflow-hidden h-full">
                 <CardContent className="p-0 h-full">
                   <Image
@@ -57,6 +57,7 @@ export default function WebsiteMarketingSection() {
       {selectedImage && (
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
           <DialogContent className="max-w-4xl p-0">
+             <DialogTitle className="sr-only">Enlarged Image View</DialogTitle>
             <Image
               src={selectedImage}
               alt="Enlarged view"
