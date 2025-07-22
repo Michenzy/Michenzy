@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, User } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -15,11 +15,17 @@ export default function HeroSection() {
             <p className="max-w-[600px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               I help businesses drive growth by turning data into actionable marketing strategies.
             </p>
-            <div className="mt-6">
+            <div className="mt-6 flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg">
                 <Link href="/results">
                   Explore My Work
                   <ArrowDown className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="secondary">
+                <Link href="/about">
+                   About Me
+                  <User className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
