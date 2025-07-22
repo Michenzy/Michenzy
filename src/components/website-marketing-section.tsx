@@ -4,9 +4,10 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 const images = [
-  { src: 'https://placehold.co/800x600.png', alt: 'Website marketing example 1', hint: 'website screenshot', className: 'col-span-2 row-span-2' },
-  { src: 'https://placehold.co/400x300.png', alt: 'Website marketing example 2', hint: 'landing page', className: 'col-span-1 row-span-1' },
-  { src: 'https://placehold.co/400x300.png', alt: 'Website marketing example 3', hint: 'ecommerce website', className: 'col-span-1 row-span-1' },
+  { src: '/assets/about/websites/sole-fitness-ng.jpg', alt: 'Sole Fitness NG Website', hint: 'Sole Fitness NG website screenshot', className: 'col-span-3' },
+  { src: '/assets/about/websites/cne-tv-playstore.jpg', alt: 'CNETV Playstore Ranking', hint: 'CNETV Playstore Ranking screenshot', className: 'row-span-2' },
+  { src: '/assets/about/websites/cne-tv.jpg', alt: 'CNETV Website', hint: 'CNETV Website Screenshot', className: 'col-span-2' },
+  { src: '/assets/about/websites/aforjarik-hr-partners.jpg', alt: 'Aforjarik HR Partners Website', hint: 'Aforjarik HR Partners Website Screenshot', className: 'col-span-2' },
 ];
 
 export default function WebsiteMarketingSection() {

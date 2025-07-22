@@ -4,12 +4,14 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 const images = [
-  { src: 'https://placehold.co/400x600.png', alt: 'Social media page example 1', hint: 'instagram profile', className: 'row-span-2' },
-  { src: 'https://placehold.co/400x300.png', alt: 'Social media page example 2', hint: 'facebook page', className: '' },
-  { src: 'https://placehold.co/400x300.png', alt: 'Social media page example 3', hint: 'linkedin profile', className: '' },
-  { src: 'https://placehold.co/400x600.png', alt: 'Social media page example 4', hint: 'twitter feed', className: 'row-span-2' },
-  { src: 'https://placehold.co/800x300.png', alt: 'Social media campaign', hint: 'social media campaign', className: 'col-span-2' },
-
+  { src: '/assets/about/socials/cnetv-ig.jpg', alt: 'CNETV Instagram', hint: 'CNETV Instagram profile', className: 'row-span-2' },
+  { src: '/assets/about/socials/cnetv-fb.jpg', alt: 'CNETV Facebook', hint: 'CNETV Facebook Profile', className: 'row-span-2' },
+  { src: '/assets/about/socials/cnetv-li.jpg', alt: 'CNETV LinkedIn', hint: 'CNETV LinkedIn profile', className: 'row-span-2' },
+  { src: '/assets/about/socials/afor-ig.jpg', alt: 'Afor Instagram', hint: 'Afor Instagram Profile', className: 'row-span-2' },
+  { src: '/assets/about/socials/shippack-ig.jpg', alt: 'ShipPack Instagram', hint: 'ShipPack Instagram profile', className: 'row-span-2' },
+  { src: '/assets/about/socials/sfn-ig.jpg', alt: 'Sole Fitness Nigeria Instagram', hint: 'Sole Fitness Nigeria Instagram Profile', className: 'row-span-2' },
+  { src: '/assets/about/socials/sfn-fb.jpg', alt: 'Sole Fitness Nigeria Facebook', hint: 'Sole Fitness Nigeria Facebook profile', className: 'row-span-2' },
+  { src: '/assets/about/socials/ropay-li.jpg', alt: 'roPay LinkedIn Profile', hint: 'roPay LinkedIn Profile', className: 'row-span-2' },
 ];
 
 export default function SocialMediaPagesSection() {
