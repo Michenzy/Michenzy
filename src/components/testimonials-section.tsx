@@ -73,7 +73,7 @@ const Rating = ({ rating }: { rating: number }) => (
 
 export default function TestimonialsSection() {
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true, stopOnMouseEnter: true })
+    Autoplay({ delay: 5000, stopOnInteraction: true, stopOnMouseEnter: true })
   );
 
   return (
