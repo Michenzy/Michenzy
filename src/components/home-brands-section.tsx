@@ -12,7 +12,7 @@ import { associatedBrands } from '@/lib/utils';
 
 export default function HomeBrandsSection() {
     const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })
+    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: false })
   );
 
   return (
