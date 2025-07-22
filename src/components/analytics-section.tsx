@@ -4,24 +4,26 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 const images = [
-  { src: 'https://placehold.co/600x300.png', alt: 'Analytics graph', hint: 'analytics chart', className: 'col-span-2' },
-  { src: 'https://placehold.co/600x300.png', alt: 'Analytics weekly performance', hint: 'analytics dashboard', className: 'col-span-2' },
-  { src: 'https://placehold.co/300x400.png', alt: 'Mobile app analytics', hint: 'app analytics', className: 'row-span-2' },
-  { src: 'https://placehold.co/600x300.png', alt: 'Analytics overview', hint: 'data chart', className: 'col-span-2' },
-  { src: 'https://placehold.co/300x200.png', alt: 'Traffic source report', hint: 'analytics report', className: '' },
-  { src: 'https://placehold.co/300x200.png', alt: 'Leads campaign report', hint: 'campaign report', className: '' },
-  { src: 'https://placehold.co/300x200.png', alt: 'Keywords list', hint: 'seo keywords', className: '' },
-  { src: 'https://placehold.co/300x200.png', alt: 'Financial report', hint: 'financial report', className: '' },
-  { src: 'https://placehold.co/300x400.png', alt: 'Mobile UI dark mode', hint: 'mobile ui', className: 'row-span-2' },
-  { src: 'https://placehold.co/300x400.png', alt: 'Mobile app feed', hint: 'app feed', className: 'row-span-2' },
-  { src: 'https://placehold.co/300x200.png', alt: 'Traffic details', hint: 'analytics details', className: '' },
-  { src: 'https://placehold.co/300x200.png', alt: 'User engagement stats', hint: 'user engagement', className: '' },
-  { src: 'https://placehold.co/300x400.png', alt: 'Mobile campaign summary', hint: 'campaign summary', className: 'row-span-2' },
-  { src: 'https://placehold.co/300x400.png', alt: 'Mobile app statistics', hint: 'app statistics', className: 'row-span-2' },
-  { src: 'https://placehold.co/600x300.png', alt: 'Detailed financial statement', hint: 'financial statement', className: 'col-span-2' },
-  { src: 'https://placehold.co/600x300.png', alt: 'Long-term performance chart', hint: 'performance chart', className: 'col-span-2' },
-  { src: 'https://placehold.co/300x400.png', alt: 'Engagement details mobile', hint: 'mobile engagement', className: 'row-span-2' },
-  { src: 'https://placehold.co/300x400.png', alt: 'User data dark mode', hint: 'user data', className: 'row-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0010.jpg', alt: 'Analytics graph', hint: 'analytics chart', className: 'md:col-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0011.jpg', alt: 'Analytics weekly performance', hint: 'analytics dashboard', className: 'md:col-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0027.jpg', alt: 'Mobile app analytics', hint: 'app analytics', className: 'row-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0015.jpg', alt: 'Analytics overview', hint: 'data chart', className: 'md:col-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0034.jpg', alt: 'Traffic source report', hint: 'analytics report', className: '' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0035.jpg', alt: 'Leads campaign report', hint: 'campaign report', className: '' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0036.jpg', alt: 'Keywords list', hint: 'seo keywords', className: '' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0037.jpg', alt: 'Financial report', hint: 'financial report', className: '' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0030.jpg', alt: 'Mobile UI dark mode', hint: 'mobile ui', className: 'row-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0032.jpg', alt: 'Mobile app feed', hint: 'app feed', className: 'row-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0039.jpg', alt: 'Traffic details', hint: 'analytics details', className: '' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0040.jpg', alt: 'User engagement stats', hint: 'user engagement', className: '' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0033.jpg', alt: 'Mobile campaign summary', hint: 'campaign summary', className: 'row-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0041.jpg', alt: 'Mobile app statistics', hint: 'app statistics', className: 'row-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0028.jpg', alt: 'Detailed financial statement', hint: 'financial statement', className: 'md:col-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0029.jpg', alt: 'Long-term performance chart', hint: 'performance chart', className: 'md:col-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0038.jpg', alt: 'Engagement details mobile', hint: 'mobile engagement', className: 'row-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0031.jpg', alt: 'User data dark mode', hint: 'user data', className: 'row-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0042.jpg', alt: 'Engagement details mobile', hint: 'mobile engagement', className: 'row-span-2' },
+  { src: '/assets/about/analytics/IMG-20250722-WA0043.jpg', alt: 'User data dark mode', hint: 'user data', className: 'row-span-2' },
 ];
 
 export default function AnalyticsSection() {
@@ -39,7 +41,7 @@ export default function AnalyticsSection() {
             Visualizing data to tell a story and drive strategic decisions.
           </p>
         </div>
-        <div className="mx-auto mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-fr gap-4 lg:gap-6">
+        <div className="mx-auto mt-12 grid grid-cols-2 md:grid-cols-4 auto-rows-fr gap-4 lg:gap-6">
           {images.map((image, index) => (
              <Card key={index} className={`overflow-hidden cursor-pointer ${image.className}`}>
                 <CardContent className="p-0 h-full">

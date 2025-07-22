@@ -29,7 +29,7 @@ export default function SocialMediaPagesSection() {
             Examples of social media presence I have cultivated, focusing on engagement and brand consistency.
           </p>
         </div>
-        <div className="mx-auto mt-12 grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 lg:gap-6">
+        <div className="mx-auto mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
           {images.map((image, index) => (
              <Card key={index} className={`overflow-hidden cursor-pointer ${image.className}`}>
                 <CardContent className="p-0 h-full">
