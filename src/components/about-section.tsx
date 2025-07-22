@@ -7,10 +7,10 @@ export default function AboutSection() {
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
           <div className="w-full lg:w-1/3 flex justify-center lg:justify-start">
             <Image
-              src="/assets/me/micheal-joseph-headshot.jpg"
+              src="/assets/me/micheal-joseph-portrait.jpg"
               alt="Micheal Joseph Portrait"
               width={450}
-              height={450}
+              height={675}
               className="rounded-lg object-cover aspect-square shadow-2xl ring-4 ring-primary/20"
               data-ai-hint="professional portrait"
             />
