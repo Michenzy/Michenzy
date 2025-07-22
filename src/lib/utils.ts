@@ -17,3 +17,23 @@ export const associatedBrands = [
   { name: 'SDGC', logo: '/assets/brands/success-drives-global-consult.jpg', dataAiHint: 'SDGC logo' },
   { name: 'Voucher Africa', logo: '/assets/brands/voucher-africa.jpg', dataAiHint: 'Voucher Africa logo' },
 ];
+
+
+export const certificates = [
+    {
+        title: "Google Ads Certification",
+        embedUrl: "https://drive.google.com/file/d/1aBcDeFgHiJkLmNoPqRsTuVwXyZ_12345/preview"
+    },
+    {
+        title: "HubSpot Content Marketing",
+        embedUrl: "https://drive.google.com/file/d/1bCdEfGhIjKlMnOpQrStUvWxYz_54321/preview"
+    },
+    {
+        title: "Meta Certified Digital Marketing Associate",
+        embedUrl: "https://drive.google.com/file/d/1cDeFgHiJkLmNoPqRsTuVwXyZ_67890/preview"
+    },
+    {
+        title: "Google Analytics Individual Qualification",
+        embedUrl: "https://drive.google.com/file/d/1dEfGhIjKlMnOpQrStUvWxYz_09876/preview"
+    }
+]
