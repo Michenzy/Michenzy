@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Contact Micheal Joseph | Let's Collaborate",
   description: "Get in touch with Micheal Joseph to discuss marketing projects, collaborations, or career opportunities.",
+  keywords: ['Contact Micheal Joseph', 'Hire Marketing Strategist', 'Marketing Collaboration', 'Marketing Projects', 'Connect with Micheal Joseph'],
    alternates: {
     canonical: '/contact',
   },

@@ -9,6 +9,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Micheal Joseph | Marketing Strategist',
   description: 'Micheal Joseph is a data-driven marketing professional specializing in turning analytics into actionable growth strategies. Explore my work and results.',
+  keywords: ['Marketing Strategist', 'Digital Advertising', 'SEO', 'Social Media Management', 'Marketing Portfolio', 'Micheal Joseph', 'Tech Marketing'],
    alternates: {
     canonical: '/',
   },

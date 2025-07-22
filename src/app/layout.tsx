@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     template: '%s | Micheal Joseph',
   },
   description: 'Micheal Joseph is a data-driven marketing professional specializing in turning analytics into actionable growth strategies. Explore my work and results.',
+  keywords: ['Micheal Joseph', 'Marketing Strategist', 'Digital Marketing', 'SEO', 'PPC', 'Data Analytics', 'ROI', 'Growth Marketing', 'Marketing Leadership'],
   openGraph: {
     title: 'Micheal Joseph | Marketing Strategist',
     description: 'Data-driven marketing professional turning analytics into growth strategies.',

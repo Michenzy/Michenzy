@@ -8,6 +8,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'About Micheal Joseph | My Story & Philosophy',
   description: "Learn about Micheal Joseph's journey from accounting to marketing leadership and the data-first philosophy that drives his success.",
+  keywords: ['About Micheal Joseph', 'Marketing Philosophy', 'Data-Driven Marketing', 'Marketing Leader', 'Accountant turned Marketer', 'ROI Focused Marketing'],
    alternates: {
     canonical: '/about',
   },

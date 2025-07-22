@@ -9,6 +9,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Marketing Results & Case Studies',
   description: "View case studies, marketing campaigns, and analytics dashboards demonstrating Micheal Joseph's impact on business growth.",
+  keywords: ['Marketing Case Studies', 'Marketing Results', 'Campaign Performance', 'Analytics Dashboards', 'SEO Results', 'E-commerce Growth', 'Lead Generation'],
    alternates: {
     canonical: '/results',
   },
