@@ -2,7 +2,6 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: 'standalone',
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -10,7 +9,6 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    unoptimized: true, // Disable image optimization for all images due to docker standalone output
     remotePatterns: [
       {
         protocol: 'https',
